@@ -122,7 +122,12 @@
   </main>
   <script>
     function loading() {
-      document.querySelector('.preloader').style.display = "none";
+      var delay=5000; 
+      
+      setTimeout(function(){
+        document.querySelector('.preloader').style.display = "none";
+      },delay);
+      
     }
   </script>
   <script src="script/menu.js"></script>
