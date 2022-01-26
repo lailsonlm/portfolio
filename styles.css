@@ -1,0 +1,387 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --blue-700: #071926;
+  --blue-600: #003459;
+  --blue-500: #1D9DDD;
+  --blue-400: #5AB9EA;
+  --blue-300: #A7DAF5;
+  --blue-50: #EDF7FD;
+}
+
+html {
+  /* cada 1rem será considerado 10px */
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+/* :target {
+  scroll-margin-top: .8em;
+} */
+
+body {
+  width: 100%;
+  height: 100%;
+
+  background-color: var(--blue-700);
+  font-family: 'Open Sans', sans-serif;;
+  font-size: 1.8rem;
+  color: var(--blue-50);
+}
+
+.preloader {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(0deg, rgba(7, 25, 38, 0.8), rgba(7, 25, 38, 0.8)), url('images/bg_home.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 999;
+}
+
+.pre_anime {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #edf7fd0c;
+  backdrop-filter:blur(3px);
+  width: 100%;
+  height: 100%;
+}
+
+.logo_pre {
+  animation: animePreloader 1.8s ease-in-out infinite;
+}
+
+@keyframes animePreloader {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  50% {
+      transform: scale(0.98);
+      filter:blur(2px);
+  }
+
+  100% {
+      opacity: 1;
+      transform: scale(1);
+  }
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(0deg, rgba(7, 25, 38, 0.8), rgba(7, 25, 38, 0.8)), url('images/bg_home.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.container_nav {
+  display: flex;
+  width: 100%;
+  height: 7.0rem;
+  margin: 0 auto;
+  
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+
+  animation: translateDown 1.5s ease-in-out;
+}
+
+@keyframes translateDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+
+  100% {
+      opacity: 1;
+      transform: translateY(0px);
+  }
+}
+
+.navbarAnime {
+  background-color: #071926da;
+  box-shadow: 3px 3px 10px #07192675;
+  transition: 1s;
+  backdrop-filter:blur(5px);
+}
+
+nav {
+  display: flex;
+  width: 100%;
+  max-width: 1240px;
+  height: 5.0rem;
+  margin: 0 auto;
+
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icons_nav {
+  display: flex;
+  width: 6.6rem;
+  justify-content: space-between;
+}
+
+.social-svg {
+  width: 2.5rem;
+  height: 2.5rem;
+  fill: var(--blue-50);
+  transition: 0.5s;
+}
+
+.social-svg:hover {
+  fill: var(--blue-300);
+}
+
+.menu {
+  display: flex;
+  width: 100%;
+  max-width: 44.7rem;
+  justify-content: space-between;
+  list-style:none;
+}
+
+.menu a {
+  font-weight: 700;
+  color: var(--blue-50);
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+.menu a:hover {
+  color: var(--blue-300);
+  text-decoration: none;
+}
+
+.logo_home {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1240px;
+  height: calc(100% - 50px);
+  margin: 0 auto;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.logo_home h2 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-top: 0.8rem;
+}
+
+.left_long  {
+  animation: translateHomeLeft 1.5s ease-in-out;
+}
+
+.right_long  {
+  animation: translateHomeRight 1.5s ease-in-out;
+}
+
+@keyframes translateHomeLeft {
+  0% {
+    opacity: 0;
+    transform:  translate3d(-100px, 0, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+  }
+}
+
+@keyframes translateHomeRight {
+  0% {
+    opacity: 0;
+    transform:  translate3d(100px, 0, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+  }
+}
+
+.arow-down {
+  animation: translateUp 0.8s ease-in-out infinite alternate;
+}
+
+@keyframes translateUp {
+  0% {
+      transform: translateY(0px);
+  }
+
+  100% {
+      transform: translateY(-20px);
+  }
+}
+
+#about {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--blue-50);
+  color: var(--blue-700);
+  background-image: url('images/bg_about.png');
+  background-repeat: no-repeat;
+  background-position: 105%;
+  background-size: contain;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  max-width: 1240px;
+  height: 48.4rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about-me {
+  width: 100%;
+  max-width: 812px;
+  text-align: justify;
+}
+
+.about-me h1 {
+  font-size: 3.6rem;
+  font-weight: 700;
+  color: var(--blue-600);
+  padding: 0.8rem;
+}
+
+.about-me h2 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin: 3.2rem 0 0.8rem;
+  padding-left: 0.8rem;
+}
+
+.about-me p {
+  font-size: 1.8rem;
+  font-weight: 400;
+  padding-left: 0.8rem;
+}
+
+.anime_img_about {
+  animation: translateUp 0.8s ease-in-out infinite alternate;
+}
+
+.anime_img_about:hover {
+  animation: rotate 1s ease-in-out alternate;
+}
+
+@keyframes rotate {
+  0% {
+      transform: scale(1.1);
+  }
+}
+
+
+#portfolio {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--blue-50);
+  color: var(--blue-700);
+  background: linear-gradient(0deg, rgba(7, 25, 38, 0.5), rgba(7, 25, 38, 0.5)), url('images/bg_portfolio.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#portfolio h1 {
+  font-size: 3.6rem;
+  font-weight: 700;
+  color: var(--blue-50);
+  margin: 9.0rem auto 0.8rem;
+}
+
+.container_portfolio {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  max-width: 1240px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.6rem;
+  justify-items: center;
+  align-content: center;
+}
+
+.projeto {
+  width: 36.0rem;
+  min-height: 32.0rem;
+  padding: 0.8rem;
+  background-color: var(--blue-50);
+  border-radius: 0.4rem;
+}
+
+.projeto img {
+  width: 100%;
+  border-top: 0.4rem;
+}
+
+.projeto h2 {
+  margin: 0.8rem 1.6rem 0;
+}
+
+.projeto p {
+  margin: 0 1.6rem;
+}
+
+/* Anime */
+
+[data-anime] {
+  opacity: 0;
+  transition: 0.8s ease-in-out;
+}
+
+
+[data-anime="left"] {
+  transform:  translate3d(-50px, 0, 0);
+}
+
+[data-anime="right"] {
+  transform:  translate3d(50px, 0, 0);
+}
+
+[data-anime="left-long"] {
+  transform:  translate3d(-100px, 0, 0);
+}
+
+[data-anime="right-long"] {
+  transform:  translate3d(100px, 0, 0);
+}
+
+[data-anime="bottom"] {
+  transform:  translate3d(0, 50px, 0);
+}
+
+[data-anime].animate {
+  opacity: 1;
+  transform: translate3d(0px, 0px, 0px);
+}
