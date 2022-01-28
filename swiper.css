@@ -17,3 +17,16 @@
 .swiper-button-prev::after, .swiper-button-next::after  {
   color: #1D9DDD;
 }
+
+@media(max-width: 992px) {
+  .swiper {
+    height: 100%;
+  }
+}
+
+@media(max-width: 576px) {
+  .swiper-button-prev::after, .swiper-button-next::after  {
+    color: #1d9ddd41;
+  }
+}
+
