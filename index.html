@@ -8,8 +8,15 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="swiper.css">
+  <link rel="stylesheet" href="modal.css">
 
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+  />
 
   <title>Lailson Sobral | Desenvolvedor Front-End</title>
 </head>
@@ -107,36 +114,79 @@
       <h1 data-anime="bottom">PORTFÓLIO</h1>
       <div class="container_portfolio">
         <div class="portfolio_list" data-anime="bottom">
-          <div id="portfolio01" class="bg_portfolio"></div>
-          <h2>Worldtrip</h2>
-          <p>Saiba mais</p>
+
+          <div id="portfolio0" class="bg_portfolio"></div>
+            <div class="title">
+              <h2>Worldtrip</h2>
+              <a href="https://worldtrip-lailsonlm.vercel.app/" target="_blank">
+                <img src="images/external-link.svg" alt="Link Externo">
+              </a>
+            </div>
+            <div class="divider">•</div>
+          <p>Aplicação Next.js, simulando uma agência de viagem, com o uso do Chakra UI e API Routes para listagem dos continentes e cidades.</p>
         </div>
+
         <div class="portfolio_list" data-anime="bottom">
-          <div id="portfolio02" class="bg_portfolio"></div>
-          <h2>Spacetraveling</h2>
-          <p>Saiba mais</p>
+          <div id="portfolio1" class="bg_portfolio"></div>
+          <div class="title">
+            <h2>Spacetraveling</h2>
+            <a href="https://ignite-space-traveling.vercel.app/" target="_blank">
+              <img src="images/external-link.svg" alt="Link Externo">
+            </a>
+          </div>
+          <div class="divider">•</div>
+          <p>Blog desenvolvido em Next.js, consumindo os dados do PISMIC CMS, com paginação, comentários e navegação entres os posts.</p>
         </div>
+
         <div class="portfolio_list" data-anime="bottom">
-          <div id="portfolio03" class="bg_portfolio"></div>
-          <h2>Github Profiles</h2>
-          <p>Saiba mais</p>
+          <div id="portfolio2" class="bg_portfolio"></div>
+          <div class="title">
+            <h2>Github Profiles</h2>
+            <a href="https://github-profiles-lailsonlm.vercel.app/" target="_blank">
+              <img src="images/external-link.svg" alt="Link Externo">
+            </a>
+          </div>
+          <div class="divider">•</div>
+          <p>Pesquisa de informações do usuário utilizando a API do GitHub.</p>
         </div>
+        
         <div class="portfolio_list" data-anime="bottom">
-          <div id="portfolio04" class="bg_portfolio"></div>
-          <h2>To Do List</h2>
-          <p>Saiba mais</p>
+          <div id="portfolio3" class="bg_portfolio"></div>
+          <div class="title">
+            <h2>To Do List</h2>
+            <a>
+              <img src="images/external-link.svg" alt="Link Externo" class="link_disabled">
+            </a>
+          </div>
+          <div class="divider">•</div>
+          <p>Aplicação React para gerenciamento de tarefas.</p>
         </div>
+
         <div class="portfolio_list" data-anime="bottom">
-          <div id="portfolio05" class="bg_portfolio"></div>
-          <h2>Gitkut</h2>
-          <p>Saiba mais</p>
+          <div id="portfolio4" class="bg_portfolio"></div>
+          <div class="title">
+            <h2>Gitkut</h2>
+            <a href="https://gitkut-lailsonlm.vercel.app/login" target="_blank">
+              <img src="images/external-link.svg" alt="Link Externo">
+            </a>
+          </div>
+          <div class="divider">•</div>
+          <p>Clone do antigo Orkut utilizando API do Github para login e consumo das informações.</p>
         </div>
+
         <div class="portfolio_list" data-anime="bottom">
-          <div id="portfolio06" class="bg_portfolio"></div>
-          <h2>Clone Netflix</h2>
-          <p>Saiba mais</p>
+          <div id="portfolio5" class="bg_portfolio"></div>
+          <div class="title">
+            <h2>Clone Netflix</h2>
+            <a>
+              <img src="images/external-link.svg" alt="Link Externo" class="link_disabled">
+            </a>
+          </div>
+          <div class="divider">•</div>
+          <p>Clone Netflix utilizando HTML, CSS e JavaScript.</p>
         </div>
       </div>
+
     </section>
   </main>
 
@@ -171,12 +221,53 @@
     </div>
   </footer>
 
+  <div id="modal-portfolio" class="modal-container">
+    <div class="modal">
+        <button class="close">x</button>
+        
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="portfolio0"></div>
+            </div>
+            <div class="swiper-slide" class="portfolio1">
+              <div class="portfolio1"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="portfolio2"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="portfolio3"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="portfolio4"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="portfolio5"></div>
+            </div>
+          </div>
+  
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+  
+          <div class="swiper-scrollbar"></div>
+        </div>
+        
+    </div>
+  </div>
+
   <script>
     function loading() {
-        document.querySelector('.preloader').style.display = "none";
+      setTimeout(() => {document.querySelector('.preloader').style.display = "none";}, 2000)
     }
   </script>
+
   <script src="script/menu.js"></script>
   <script src="script/dataAnime.js"></script>
+  
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <script  src="script/swiper.js"></script>
+  <script src="script/modal.js"></script>
+
 </body>
 </html>

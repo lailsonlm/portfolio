@@ -1,0 +1,66 @@
+/* MODAL PORTFOLIO */
+.modal-container {
+  width: 100vw;
+  height: 100vh;
+  background-color: #071926da;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2000;
+  display:none;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-container.modal-toggle {
+  display: flex;
+}
+
+.modal {
+  width: 100%;
+  min-width: 300px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.modal-toggle .modal {
+  animation: modal .3s linear;
+}
+
+@keyframes modal {
+  from {
+      opacity: 0;
+      transform: scale(0);
+  }
+
+  to {
+      opacity: 1;
+      transform: scale(1);
+  }
+}
+
+.close {
+  position: absolute;
+  top: -40px;
+  right: 320px;
+
+  width: 30px;
+  height: 30px;
+
+  color: #EDF7FD;
+  border:0px;
+  background-color:transparent;
+  font-family: 'Open Sans', sans-serif;
+  
+  border-radius: 4px;
+  cursor: pointer;
+
+  font-size: 1.4em;
+  font-weight: 600;
+  
+}
+
+.close:hover {
+  color: #1D9DDD;
+  
+}

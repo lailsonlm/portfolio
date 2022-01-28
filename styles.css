@@ -28,7 +28,7 @@ body {
   height: 100%;
 
   background-color: var(--blue-700);
-  font-family: 'Open Sans', sans-serif;;
+  font-family: 'Open Sans', sans-serif;
   font-size: 1.8rem;
   color: var(--blue-50);
 }
@@ -351,6 +351,9 @@ nav {
 }
 
 .portfolio_list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 36.0rem;
   min-height: 32.0rem;
   padding: 0.8rem;
@@ -361,11 +364,57 @@ nav {
 
 .portfolio_list h2 {
   color: var(--blue-600);
-  margin: 0.8rem 1.6rem 0;
+  margin: 0.4rem 0;	
 }
 
+.title {
+  display: flex;
+  align-items: center;
+}
+
+.title img {
+  margin-left: 0.8rem;
+}
+
+.title a:hover {
+  transform: scale(1.2);
+}
+
+.link_disabled {
+  cursor: not-allowed;
+}
+
+.divider {
+  width: 70%;
+  color: #ccc;
+  margin-bottom: 0.8rem;
+  display: flex;
+  align-items: center;
+}
+
+.divider::before {
+  content: '';
+  flex: 1;
+  height: 1px;
+  margin-right: 16px;
+  background: #ccc;
+    
+}
+  
+.divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  margin-left: 16px;
+  background: #ccc;
+       
+  }
+
 .portfolio_list p {
-  margin: 0 1.6rem;
+  width: 90%;
+  font-size: 1.4rem;
+  text-align: center;
+  padding-bottom: 1.6rem;
 }
 
 .bg_portfolio {
@@ -374,7 +423,7 @@ nav {
 }
 
 .bg_portfolio:hover {
-  cursor: zoom-in;
+  cursor: pointer;
   transform: scale(1.15);
   border: 1px solid var(--blue-50);
 }
@@ -385,34 +434,82 @@ nav {
   border-top: 0.4rem;
 }
 
-#portfolio01 {
+#portfolio0 {
   background: url("images/projeto_worldtrip.JPG") center;
   background-size: cover;
 }
 
-#portfolio02 {
+.portfolio0 {
+  width: 100%;
+  height: 100%;
+  background: url("images/projeto_worldtrip.JPG") center;
+  background-size: cover;
+  border-radius: 0.4rem;
+}
+
+#portfolio1 {
   background: url("images/projeto_spacetraveling.JPG") center;
   background-size: cover;
 }
 
-#portfolio03 {
+.portfolio1 {
+  width: 100%;
+  height: 100%;
+  background: url("images/projeto_spacetraveling.JPG") center;
+  background-size: cover;
+  border-radius: 0.4rem;
+}
+
+#portfolio2 {
   background: url("images/projeto_githubprofiles.JPG") center;
   background-size: cover;
 }
 
-#portfolio04 {
+.portfolio2 {
+  width: 100%;
+  height: 100%;
+  background: url("images/projeto_githubprofiles.JPG") center;
+  background-size: cover;
+  border-radius: 0.4rem;
+}
+
+#portfolio3 {
   background: url("images/projeto_todo.JPG") center;
   background-size: cover;
 }
 
-#portfolio05 {
+.portfolio3 {
+  width: 100%;
+  height: 100%;
+  background: url("images/projeto_todo.JPG") center;
+  background-size: cover;
+  border-radius: 0.4rem;
+}
+
+#portfolio4 {
   background: url("images/projeto_gitkut.JPG") center;
   background-size: cover;
 }
 
-#portfolio06 {
+.portfolio4 {
+  width: 100%;
+  height: 100%;
+  background: url("images/projeto_gitkut.JPG") center;
+  background-size: cover;
+  border-radius: 0.4rem;
+}
+
+#portfolio5 {
   background: url("images/projeto_netflix.JPG") center;
   background-size: cover;
+}
+
+.portfolio5 {
+  width: 100%;
+  height: 100%;
+  background: url("images/projeto_netflix.JPG") center;
+  background-size: cover;
+  border-radius: 0.4rem;
 }
 
 
