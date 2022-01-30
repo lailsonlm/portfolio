@@ -758,6 +758,23 @@ footer {
     font-size: 1.4rem;
   }
 
+  .preloader {
+    width: 100vw;
+    height: 100vh;
+  }
+  .logo_pre {
+    width: 90%;
+  }
+
+  .logo_pre svg {
+    width: 100%;
+  }
+
+  .preloader {
+    background-position: 20%;
+  }
+  
+
   nav {
     display: flex;
     width: 100%;
@@ -780,7 +797,6 @@ footer {
 
   #home {
     background-position: 20%;
-
   }
 
   .logo_home {
