@@ -1,5 +1,4 @@
 const swiper = new Swiper('.swiper', {
-  // speed: 160,
   spaceBetween: 100,
   loop: true,
   autoplay: false,
