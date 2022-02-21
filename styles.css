@@ -178,6 +178,7 @@ nav {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  
 }
 
 .logo_home {
@@ -230,6 +231,7 @@ nav {
 }
 
 .arow-down {
+  margin-bottom: 50px;
   animation: translateUp 0.8s ease-in-out infinite alternate;
 }
 

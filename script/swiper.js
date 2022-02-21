@@ -16,6 +16,7 @@ const p2 = document.querySelector('#portfolio2')
 const p3 = document.querySelector('#portfolio3')
 const p4 = document.querySelector('#portfolio4')
 const p5 = document.querySelector('#portfolio5')
+const p6 = document.querySelector('#portfolio6')
 
 p0.addEventListener('click', (e) => {
   e.preventDefault();
@@ -45,4 +46,9 @@ p4.addEventListener('click', (e) => {
 p5.addEventListener('click', (e) => {
   e.preventDefault();
   swiper.slideTo(6, 0);
+})
+
+p6.addEventListener('click', (e) => {
+  e.preventDefault();
+  swiper.slideTo(7, 0);
 })
