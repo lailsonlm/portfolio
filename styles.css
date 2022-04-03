@@ -461,12 +461,12 @@ nav {
   border-top: 0.4rem;
 }
 
-#portfolio7 {
+#portfolio0 {
   background: url("images/projeto_comunidev_small.jpg") center;
   background-size: cover;
 }
 
-.portfolio7 {
+.portfolio0 {
   width: 100%;
   height: 100%;
   background: url("images/projeto_comunidev.JPG") center;
@@ -474,12 +474,12 @@ nav {
   border-radius: 0.4rem;
 }
 
-#portfolio0 {
+#portfolio1 {
   background: url("images/projeto_marvelapi_small.jpg") center;
   background-size: cover;
 }
 
-.portfolio0 {
+.portfolio1 {
   width: 100%;
   height: 100%;
   background: url("images/projeto_marvelapi.JPG") center;
@@ -488,12 +488,12 @@ nav {
 }
 
 
-#portfolio1 {
+#portfolio2 {
   background: url("images/projeto_worldtrip_small.jpg") center;
   background-size: cover;
 }
 
-.portfolio1 {
+.portfolio2 {
   width: 100%;
   height: 100%;
   background: url("images/projeto_worldtrip.JPG") center;
@@ -501,12 +501,12 @@ nav {
   border-radius: 0.4rem;
 }
 
-#portfolio2 {
+#portfolio3 {
   background: url("images/projeto_spacetraveling_small.jpg") center;
   background-size: cover;
 }
 
-.portfolio2 {
+.portfolio3 {
   width: 100%;
   height: 100%;
   background: url("images/projeto_spacetraveling.JPG") center;
@@ -514,12 +514,12 @@ nav {
   border-radius: 0.4rem;
 }
 
-#portfolio3 {
+#portfolio4 {
   background: url("images/projeto_githubprofiles_small.jpg") center;
   background-size: cover;
 }
 
-.portfolio3 {
+.portfolio4 {
   width: 100%;
   height: 100%;
   background: url("images/projeto_githubprofiles.JPG") center;
@@ -527,12 +527,12 @@ nav {
   border-radius: 0.4rem;
 }
 
-#portfolio4 {
+#portfolio5 {
   background: url("images/projeto_todo_small.jpg") center;
   background-size: cover;
 }
 
-.portfolio4 {
+.portfolio5 {
   width: 100%;
   height: 100%;
   background: url("images/projeto_todo.JPG") center;
@@ -540,12 +540,12 @@ nav {
   border-radius: 0.4rem;
 }
 
-#portfolio5 {
+#portfolio6 {
   background: url("images/projeto_gitkut_small.jpg") center;
   background-size: cover;
 }
 
-.portfolio5 {
+.portfolio6 {
   width: 100%;
   height: 100%;
   background: url("images/projeto_gitkut.JPG") center;
@@ -553,20 +553,12 @@ nav {
   border-radius: 0.4rem;
 }
 
-#portfolio6 {
+#portfolio7 {
   background: url("images/projeto_netflix_small.jpg") center;
   background-size: cover;
 }
 
-.portfolio6 {
-  width: 100%;
-  height: 100%;
-  background: url("images/projeto_netflix.JPG") center;
-  background-size: cover;
-  border-radius: 0.4rem;
-}
-
-.portfolio6 {
+.portfolio7 {
   width: 100%;
   height: 100%;
   background: url("images/projeto_netflix.JPG") center;
